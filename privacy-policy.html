@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Clipboard History Manager</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-gradient-start: #f8fafc;
+      --bg-gradient-end: #e2e8f0;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --accent: #4f46e5;
+      --accent-light: #e0e7ff;
+      --border: #e2e8f0;
+      --shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font);
+      background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header styling */
+    .header {
+      background: linear-gradient(135deg, #4f46e5, #3730a3);
+      padding: 40px;
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo-container {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px;
+      height: 64px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      margin-bottom: 16px;
+      font-size: 32px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+
+    .header p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: 500;
+    }
+
+    /* Content styling */
+    .content {
+      padding: 40px;
+    }
+
+    .update-date {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .section {
+      margin-bottom: 32px;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #1e1b4b;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section p {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .highlight-box {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      padding: 16px;
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0;
+    }
+
+    .highlight-box p {
+      color: #312e81;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-left: 4px;
+      margin-bottom: 16px;
+    }
+
+    li {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    /* Footer styling */
+    .footer {
+      background: #f8fafc;
+      padding: 24px 40px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 16px 10px;
+      }
+      .header, .content, .footer {
+        padding: 24px;
+      }
+      .header h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo-container">📋</div>
+      <h1>Clipboard History Manager</h1>
+      <p>Official Privacy Policy</p>
+    </header>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="update-date">
+        <span>📅</span> Last Updated: July 6, 2026
+      </div>
+
+      <!-- Section 1 -->
+      <div class="section">
+        <h2 class="section-title">🔒 1. Data Collection & Transmission</h2>
+        <p>The Clipboard History Manager is designed with privacy as the core fundamental value. It functions as a <strong>100% local extension</strong>.</p>
+        <div class="highlight-box">
+          <p>We do not collect, monitor, store, or transmit any of your copied text, links, images, or general clipboard history to any external servers, third-party databases, or cloud services.</p>
+        </div>
+        <p>There are no tracking cookies, analytics modules, or third-party tracking scripts bundled with this extension.</p>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="section">
+        <h2 class="section-title">💾 2. Local Storage & Security</h2>
+        <p>All clipboard entries, custom tags, application preferences, and usage metrics are saved locally using the browser's native sandboxed storage (<code>chrome.storage.local</code>).</p>
+        <ul>
+          <li>Your database is kept encrypted and protected by the browser's security sandbox.</li>
+          <li>We have no access to the items you copy.</li>
+          <li>You can delete individual history entries, clear your history log, or fully reset settings anytime directly inside the extension popup.</li>
+        </ul>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="section">
+        <h2 class="section-title">🌐 3. Content Scripts & Permissions</h2>
+        <p>To capture copying actions automatically, the extension registers lightweight content scripts on web pages. These scripts run isolated inside your browser window to capture <code>copy</code> events or custom copy-button clicks.</p>
+        <p>This data does not leave your local browser thread and is immediately handed over to the local extension manager database.</p>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="section">
+        <h2 class="section-title">📤 4. Note Sharing Integrations</h2>
+        <p>If you explicitly use the "Share to Notes" button to send an item to Google Keep, Notion, OneNote, or Evernote, the extension opens their official web editor inside a new tab and inserts the text. This action is manually initiated by you and governed by the privacy policy of the respective notes application.</p>
+      </div>
+
+      <!-- Section 5 -->
+      <div class="section">
+        <h2 class="section-title">✉️ 5. Support & Contact</h2>
+        <p>If you have any questions or feedback regarding our privacy practices, you can contact the developer using the official support email provided on the Microsoft Edge Add-ons Store listing page.</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2026 Clipboard History Manager. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
